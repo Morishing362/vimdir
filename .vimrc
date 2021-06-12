@@ -5,12 +5,13 @@ call vundle#begin()
 	Plugin 'preservim/nerdtree'
 	Plugin 'dart-lang/dart-vim-plugin'
 	Plugin 'dense-analysis/ale'
+	Plugin 'jacoborus/tender.vim'
 call vundle#end()
 filetype plugin indent on
 
 syntax enable
 
-colorscheme lucario 
+colorscheme tender 
 
 set number
 set cursorline
@@ -29,3 +30,8 @@ augroup auto_style
 	autocmd bufWritePost *.cpp :ExecAstyle
 	autocmd bufWritePost *.hpp :ExecAstyle
 augroup END
+
+if (has("termguicolors"))
+	set termguicolors
+endif
+
