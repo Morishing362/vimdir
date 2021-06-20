@@ -4,14 +4,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
         Plugin 'preservim/nerdtree'
         Plugin 'dart-lang/dart-vim-plugin'
-        Plugin 'dense-analysis/ale'
-        Plugin 'jacoborus/tender.vim'
+        Plugin 'dense-analysis/ale' 
 call vundle#end()
 filetype plugin indent on
 
 syntax enable
 
-colorscheme tender
+colorscheme lucario
 
 set number
 set cursorline
